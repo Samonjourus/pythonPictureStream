@@ -7,7 +7,7 @@ while(vis.isOpened()):
     s, img = vis.read();
 
     if s:
-        cv2.imwrite("feed.jpeg",img);
+        cv2.imwrite("/etc/NASA_Robot/feed.jpeg",img);
         cv2.namedWindow('display',cv2.WINDOW_AUTOSIZE);
         cv2.imshow('display',img);
         cv2.waitKey(1);
